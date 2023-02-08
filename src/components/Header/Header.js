@@ -29,6 +29,7 @@ const Header = () => {
           <NavLink href="/women">Women</NavLink>
           <NavLink href="/kids">Kids</NavLink>
           <NavLink href="/collections">Collections</NavLink>
+          <NavLink href="/collections">Collections</NavLink>
         </Nav>
         <IconWrapper>
           <Icon id="shopping-bag"></Icon>
@@ -53,6 +54,7 @@ const MainHeader = styled.div`
   padding: 18px 32px;
   height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  overflow-x: auto;
   @media ${QUERIES.tabletAndLess} {
     border-top: 10px solid ${COLORS.gray[900]};
     min-width: 100%;
@@ -62,8 +64,8 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
   margin: 0px 48px;
+  gap: 5%;
   @media ${QUERIES.tabletAndLess}{
     display: none; 
   }
@@ -95,7 +97,7 @@ const NavLink = styled.a`
   text-decoration: none;
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.medium};
-
+  flex: 1;
   &:first-of-type {
     color: ${COLORS.secondary};
   }
