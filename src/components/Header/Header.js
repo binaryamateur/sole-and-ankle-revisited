@@ -33,7 +33,7 @@ const Header = () => {
         <IconWrapper>
           <Icon id="shopping-bag"></Icon>
           <Icon id="search"></Icon>
-          <Icon id="menu"></Icon>
+          <Icon id="menu" onClick = {() => setShowMobileMenu(true)} ></Icon>
         </IconWrapper>
         <NonSide />
       </MainHeader>
